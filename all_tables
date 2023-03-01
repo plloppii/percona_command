@@ -1,0 +1,26 @@
+reports_schedules id schedule_id|NULL
+venue_pricing_rule parent_id
+schedule_reservation_price schedule_id|NULL
+reserved_spots schedule_id
+classtivity_videos parent_id|NULL
+vp_schedule_extender_record schedule_id source_schedule_id
+timetable_history schedule_id
+schedule_setting schedule_id
+reservation_error_log schedule_id
+user_registration alc_schedule_id|NULL
+cron_schedule_exemption schedule_id
+user_managespots_log schedule_id parent_schedule_id|NULL
+vp_venue_opportunity_audit_log audit_id new_schedule_id|NULL old_schedule_id|NULL
+vp_venue_opportunity_old id schedule_id
+vp_venue_opportunity id schedule_id
+passport_reservations_audit id schedule_id|NULL
+venue_reservation_price schedule_id
+venue_payment_history schedule_id
+passport_reservations id schedule_id|NULL
+disabled_schedule_log id schedule_id
+smartspot_log id schedule_id
+timetable_audit id
+passport_schedules_audit schedule_id|NULL
+passport_schedules schedule_id|NULL
+bi_schedule_historical_info id schedule_id
+classtivity_classes_timetable id

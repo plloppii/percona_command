@@ -1,0 +1,27 @@
+TABLE
+$LAPI_TABLE
+
+MIGRATION
+$MIGRATIONS
+
+PERCONA COMMAND
+docker run -d perconalab/percona-toolkit pt-online-schema-change \
+        --execute \
+        --print \
+        --host <host> \
+        --user <user>  \
+        --alter-foreign-keys auto \
+        --progress percentage,1 \
+        --recursion-method none \
+        --password <pass> \
+        --alter "$PERCONA_ALTER" \
+        --max-load Threads_running:100  \
+        --critical-load Threads_running:125 \
+        --chunk-time 0.3 \
+        D=classtivityprd,t=$LAPI_TABLE
+
+COMPLETED: 
+
+==================================================================================================
+
+
